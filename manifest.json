@@ -1,0 +1,17 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "View Hardware Information",
+   "manifest_version": 2,
+   "name": "Hardware Info",
+   "permissions": [
+       "notifications",
+       "system.cpu",
+       "system.memory",
+       "system.display"
+   ],
+   "version": "0.1"
+}
