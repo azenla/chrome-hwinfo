@@ -47,3 +47,9 @@ chrome.system.display.getInfo(function(displays) {
 });
 
 setInterval(updateAvailableMemory, 2000);
+
+$(document).bind('keypress', 'ctrl+shift+a', function(){
+  $('#about').modal({
+    remote: "about.html"
+  });
+});
