@@ -8,3 +8,7 @@ var optimal = {
 chrome.app.runtime.onLaunched.addListener(function(a) {
   chrome.app.window.create('hwinfo.html', {});
 });
+
+chrome.app.runtime.onRestarted.addListener(function (a) {
+	console.log("Application Restarting");
+});

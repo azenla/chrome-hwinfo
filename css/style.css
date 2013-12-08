@@ -1,12 +1,12 @@
 .sexy-rotate {
-    -webkit-transform: translate(50px, 60px);
+    -webkit-transform: rotate(50deg);
     -webkit-transition: all 1s ease-out;
 }
 
 .centered {
-    margin:50px 0;
-    padding:0;
-    text-align:center;
+    margin: 50px 0;
+    padding: 0;
+    text-align: center;
 }
 
 .matchStrap {
