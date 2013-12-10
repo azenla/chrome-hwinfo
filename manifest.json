@@ -1,17 +1,21 @@
 {
-   "app": {
-      "background": {
-         "scripts": [ "js/background.js" ]
-      }
-   },
-   "description": "View Hardware Information",
-   "manifest_version": 2,
-   "name": "Hardware Info",
-   "permissions": [
-       "notifications",
-       "system.cpu",
-       "system.memory",
-       "system.display"
-   ],
-   "version": "0.1"
+    "app": {
+        "background": {
+            "scripts": ["js/background.js"]
+        }
+    },
+    "description": "View Hardware Information",
+    "manifest_version": 2,
+    "name": "Hardware Info",
+    "permissions": [
+        "notifications",
+        "system.cpu",
+        "system.memory",
+        "system.display"
+    ],
+    "icons": {
+        "128": "chip-128x128.png",
+        "256": "chip-256x256.png"
+    },
+    "version": "0.2"
 }
