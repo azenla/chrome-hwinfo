@@ -22,6 +22,16 @@ function updateAvailableMemory() {
     });
 }
 
+function updateCounts() {
+    chrome.system.storage.getInfo(function (devices) {
+        $("#deviceCount").html(devices.length);
+    });
+
+    chrome.system.display.getInfo(function (displays) {
+        $("#displayCount").html(displays.length);
+    });
+}
+
 chrome.system.cpu.getInfo(function (info) {
     addInfo("CPU Count", info.numOfProcessors, "cpuCount");
     addInfo("CPU Model", info.modelName, "cpuModel");
@@ -39,11 +49,16 @@ chrome.system.memory.getInfo(function (info) {
 });
 
 chrome.system.display.getInfo(function (displays) {
-    addInfo("Number of Displays", displays.length);
+    addInfo("Display Count", displays.length, "displayCount");
+});
+
+chrome.system.storage.getInfo(function (devices) {
+    addInfo("Device Count", devices.length, "deviceCount");
 });
 
 setInterval(updateAvailableMemory, 2000);
+setInterval(updateCounts, 2000);
 
-$(document).bind('keypress', 'ctrl+shift+a', function() {
+$(document).bind('keypress', 'ctrl+shift+a', function () {
     bootbox.alert("<b>Hardware Info is created by Kenneth Endfinger</b>");
 });

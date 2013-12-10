@@ -11,7 +11,8 @@
         "notifications",
         "system.cpu",
         "system.memory",
-        "system.display"
+        "system.display",
+        "system.storage"
     ],
     "icons": {
         "128": "chip-128x128.png",
