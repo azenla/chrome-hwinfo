@@ -59,6 +59,14 @@ chrome.system.storage.getInfo(function (devices) {
 setInterval(updateAvailableMemory, 2000);
 setInterval(updateCounts, 2000);
 
-$(document).bind('keypress', 'ctrl+shift+a', function () {
+$(document).bind('keypress', 'a', function () {
     bootbox.alert("<b>Hardware Info is created by Kenneth Endfinger</b>");
+});
+
+$(document).bind('keypress', 'f', function () {
+    var appWindow = chrome.app.window.current();
+    if (!appWindow.isFullscreen())
+        appWindow.fullscreen();
+    else
+        appWindow.restore();
 });
