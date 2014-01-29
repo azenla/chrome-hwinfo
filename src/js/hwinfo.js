@@ -7,11 +7,10 @@ function addInfo(key, value, id) {
         key: key,
         value: value
     });
-    if (id !== null) {
+    if (id !== null)
         $info.append("<tr><td>" + key + "</td><td id=\"" + id + "\">" + value + "</td></tr>");
-    } else {
+    else
         $info.append("<tr><td>" + key + "</td><td>" + value + "</td></tr>");
-    }
 }
 
 function updateAvailableMemory() {
