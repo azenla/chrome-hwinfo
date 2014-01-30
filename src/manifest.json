@@ -7,6 +7,7 @@
     "description": "View Hardware Information",
     "manifest_version": 2,
     "name": "Hardware Info",
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA9pSzyIkem32LCHE4z0u0s2wcW0Ve7hg1+24vUo1xapraSHVEOmQIhIYAEj/eTFGJKZQvYZcObTaB8zHsMr/6vjv/XdurFvgXQmmt3pedY8EJ82bwwejII7RVKhAT6m/qXx+Z6PSO7IUijPbSIy9GVyexL+YmaeYxMHIs8lQU6CsWYQs1kWQBzI8H8Kw0X2sd0e5cOy/AZWiXjor6Yca8xqRaNUcc44HlPYlk8V9v/bVXONNjkjRklkjZ1Yy8Q7bVJw24exIlZXBc47ePxq2mFekTI3hd1aYMi+MEG1ppA1uWlVYd/jLCQdYIcTVmuQn7u1YY02zz6G3AJwm6w+23HQIDAQAB",
     "permissions": [
         "notifications",
         "system.cpu",
