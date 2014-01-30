@@ -49,7 +49,7 @@ module.exports = function (grunt) {
       crx: {
          hwinfo: {
             src: "src/",
-            dest: "build/crx",
+            dest: "build/HardwareInfo.crx",
             privateKey: "~/.ssh/chrome-apps.pem"
          }
       },
