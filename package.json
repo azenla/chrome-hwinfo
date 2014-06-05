@@ -1,6 +1,6 @@
 {
   "name": "chrome-hwinfo",
-  "version": "0.3.0",
+  "version": "0.3.2",
   "description": "View Hardware Information on Chrome",
   "homepage": "https://github.com/kaendfinger/chrome-hwinfo/",
   "private": true,
@@ -25,9 +25,9 @@
     "url": "https://github.com/kaendfinger/chrome-hwinfo/issues"
   },
   "devDependencies": {
-    "grunt": "~0.4.2",
-    "grunt-contrib-jshint": "~0.7.2",
-    "grunt-contrib-watch": "~0.5.3",
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-watch": "~0.6.1",
     "grunt-crx": "~0.3.3",
     "grunt-contrib-csslint": "~0.2.0"
   }
